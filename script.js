@@ -138,25 +138,9 @@ document.addEventListener('keydown', function(e) {
 });
 
 // start the game
-requestAnimationFrame(loop);
-
-
-
-arrows.addEventListener('click', function() {
-  let target = event.target;
-
-  if (target === next) {
-    slideIndex++;
-  } else if (target === prev) {
-    slideIndex--;
-  } else {
-    return;
-  }
-
-  slide();
-});
-
 sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
 
 slider.addEventListener('touchstart', swipeStart);
 slider.addEventListener('mousedown', swipeStart);
+
+requestAnimationFrame(loop);
