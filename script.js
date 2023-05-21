@@ -140,7 +140,4 @@ document.addEventListener('keydown', function(e) {
 // start the game
 sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
 
-slider.addEventListener('touchstart', swipeStart);
-slider.addEventListener('mousedown', swipeStart);
-
 requestAnimationFrame(loop);
