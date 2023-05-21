@@ -25,6 +25,8 @@ var apple = {
   y: 320
 };
 
+// get random whole numbers in a specific range
+// @see https://stackoverflow.com/a/1527820/2124254
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -138,6 +140,4 @@ document.addEventListener('keydown', function(e) {
 });
 
 // start the game
-sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
-
 requestAnimationFrame(loop);
