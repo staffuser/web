@@ -1,0 +1,14 @@
+{
+    "schedule": "weekly", // daily|weekly|monthly
+    "ignoredFiles": [
+        "*.jpg"                 // ignore by extension
+    ],
+    "aggressiveCompression": "true", // true|false
+    "compressWiki": "true", // true|false
+    "minKBReduced": null, // delay new prs until size reduction meets this threshold (default to 10)
+    "prTitle" : "Updata",        
+    "prBody" : " Text before optimization ratio {optimization_ratio} Text after optimization ratio 
+                 Text before optimization details {optimization_details} Text after optimization details",
+    "slug": "contributing-website",
+    "title": "Contribute to website"
+}
